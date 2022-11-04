@@ -51,7 +51,7 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    Asuka = f"• **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm Asuka**\n"
+    Asuka = f"• **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm Shoto**\n"
     Asuka += f"• **My Uptime** - `{uptime}`\n"
     Asuka += f"• **Telethon Version** - `{version.__version__}`\n"
     Asuka += f"• **PTB Version** - `{telegram.__version__}`\n"
