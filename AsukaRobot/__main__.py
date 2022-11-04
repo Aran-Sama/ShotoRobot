@@ -61,11 +61,11 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hey {},*
-*I'm Shōto Todoroki My Hero Academia Themed Group Management Bot.*
+*I'm Shoto Todoroki My Hero Academia Themed Group Management Bot.*
 
 *Hit The The Help Button To Get List Of My Commands.××*
 
-*•Powered By* [Kaizuki](https://t.me/Kaizuka_Network)
+*•Powered By* [Kaizuka](https://t.me/Kaizuka_Network)
 
 
 """
@@ -78,7 +78,7 @@ buttons = [
                     ],
                    [
                        InlineKeyboardButton(
-                             text="Kaizuki",
+                             text="Kaizuka",
                              url="https://t.me/Kaizuka_Network"),
                        InlineKeyboardButton(
                              text="About Shoto",
