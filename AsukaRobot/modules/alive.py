@@ -56,10 +56,10 @@ async def hmm(yes):
     Asuka += f"• **Telethon Version** - `{version.__version__}`\n"
     Asuka += f"• **PTB Version** - `{telegram.__version__}`\n"
     Asuka += f"• **Pyrogram Version** - `{pyro}`\n"
-    Asuka += f"• **My Master** - [Xelcius](tg://user?id={OWNER_ID})\n\n"
+    Asuka += f"• **My Master** - [SID](tg://user?id={OWNER_ID})\n\n"
     Asuka += f"Thanks For Adding Me In {yes.chat.title}"
-    BUTTON = [[Button.url("Support Chat", "https://t.me/AsukaSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
-    on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/d03f381c8178a8fd2dc27.jpg",caption=Asuka, buttons=BUTTON)
+    BUTTON = [[Button.url("Support Chat", "https://t.me/ShotoXSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
+    on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/02dd606c84eca54e2a962.jpg",caption=Asuka, buttons=BUTTON)
 
 @register(pattern=("/repo"))
 async def repo(event):
