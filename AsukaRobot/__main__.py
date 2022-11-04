@@ -60,31 +60,29 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 PM_START_TEXT = """
-*Hey B!tch {},*
-*Myself 𝗔𝘀𝘂𝗸𝗮 𝗟𝗮𝗻𝗴𝗹𝗲𝘆 𝗦𝗼𝗿𝘆𝘂, Pilot On Evangelion Unit-02 As Well As A Powerful Group Management Bot.*
-
-❍ *EVA Unit - 02*
-❍ *Uptime* - {}
-❍ *Python Version* - {}
+*Hey {},*
+*I'm Shōto Todoroki My Hero Academia Themed Group Management Bot.*
 
 *Hit The The Help Button To Get List Of My Commands.××*
 
-*• @AsukaRobot Powered By* [𝗞𝗮𝗶𝘇𝘂𝗿𝘆𝘂](https://t.me/TheKaizuryu)
+*•Powered By* [Kaizuki](https://t.me/Kaizuka_Network)
+
+
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="➕️ Add Asuka To Your Chat ➕️",
+                             text="➕️ Add Shoto To Your Chat ➕️",
                              url="https://t.me/AsukaRobot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(
-                             text="Kaizuryu",
-                             url="https://t.me/TheKaizuryu"),
+                             text="Kaizuki",
+                             url="https://t.me/Kaizuka_Network"),
                        InlineKeyboardButton(
-                             text="About Asuka",
-                             callback_data="asuka_"),
+                             text="About Shoto",
+                             callback_data="asukaL_"),
                    ],
                   [
                         InlineKeyboardButton(
@@ -151,7 +149,7 @@ Asuka_IMG = (
       "https://telegra.ph/file/3c6cb9b50381170c95278.jpg",
 )
 
-TEXXT = "Yes B!tch, I Am Alive And Working Fine.\nCheck Out The Buttons Mentioned Below.",
+TEXXT = "Yes, I Am Alive And Working Fine.\nCheck Out The Buttons Mentioned Below.",
 
 Asuka_N_IMG = (
       "https://telegra.ph/file/0b5e88c90238c357641a7.jpg",
@@ -166,9 +164,9 @@ Asuka_PIC = "https://telegra.ph/file/eedea672a770ec92363bd.jpg"
 
 Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
 
-PM_PHOTO = "https://telegra.ph/file/fefd65c0e2ccb00453407.jpg"
+PM_PHOTO = "https://telegra.ph/file/cf523a33f67e1c29c74cb.mp4"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/d03f381c8178a8fd2dc27.jpg"
+Asuka_DISPACHER_PIC = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
@@ -227,9 +225,9 @@ for module_name in ALL_MODULES:
 def send_help(chat_id, text, keyboard=None):
     if not keyboard:
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
-    dispatcher.bot.send_photo(
+    dispatcher.bot.send_video(
         chat_id=chat_id,
-        photo=(PM_PHOTO),
+        video=(PM_PHOTO),
         caption=text,
         parse_mode=ParseMode.MARKDOWN,
         reply_markup=keyboard)
@@ -308,15 +306,15 @@ def start(update: Update, context: CallbackContext):
         first = update.effective_user.full_name
         chat = update.effective_chat.title
         update.effective_message.reply_video(
-                video="https://telegra.ph/file/c49829f9f5d65947cbc7e.mp4",
-                caption="Yes B!tch, I Am Alive And Working Fine. \nCheck Out The Buttons Mentioned Below.",
+                video="https://telegra.ph/file/cf523a33f67e1c29c74cb.mp4",
+                caption="Yes, I Am Alive And Working Fine. \nCheck Out The Buttons Mentioned Below.",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
                              text="Support",
-                             url="t.me/AsukaSupport"),
+                             url="https://t.me/ShotoXSupport"),
                        InlineKeyboardButton(
                              text="Updates",
                              url="t.me/AsukaUpdates")
@@ -792,7 +790,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n• Evangelion Unit-02 Booted Up!\n*• Let's Get The Party Started!", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
