@@ -118,7 +118,7 @@ ABOUT3 = """Hello [{}], My name is *Asuka Langley Soryu*. A Powerful Telegram Gr
             \n\n*If you have any Question, You can join Support Chat. My Developer Team will Answer. Check Support Button Below*"""
 
 HELP_STRINGS = """
-Hey [{}] *Asuka* here!
+Hey [{}] *Shoto* here!
 I Help Admins To Manage Their Groups!
 Main commands available :
  ‣ /help: PM's you this message.
@@ -289,8 +289,8 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.full_name
             id = update.effective_user.id
 
-            update.effective_message.reply_photo(
-                photo=(PM_PHOTO),
+            update.effective_message.reply_video(
+                video=(PM_PHOTO),
                 caption=PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(uptime),
@@ -790,7 +790,7 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n*", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
