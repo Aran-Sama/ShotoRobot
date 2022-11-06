@@ -48,7 +48,7 @@ from AsukaRobot.modules.helper_funcs.chat_status import sudo_plus
 from AsukaRobot.modules.helper_funcs.extraction import extract_user
 from AsukaRobot import telethn
 
-Asuka_IMG = "https://telegra.ph/file/645e0b5ca6382d6d73ab5.jpg"
+Asuka_IMG = "https://telegra.ph/file/af8f5474722dd300b1ae6.jpg"
 
 def no_by_per(totalhp, percentage):
     """
@@ -474,8 +474,8 @@ def stats(update, context):
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Repo",
-                             url="t.me/AsukaSupport")
+                             text="Owner",
+                             url="t.me/GOD_SID")
                      ] 
                 ]
             ),
@@ -490,15 +490,15 @@ def stats(update, context):
                     )
                     + f"\n\n[Support](https://t.me/{SUPPORT_CHAT}) | [Updates](https://t.me/AsukaUpdates)\n\n"
                 )
-                + "╘══「 by [The Kaizuryu](https://t.me/TheKaizuryu) 」\n"
+                + "╘══「 by [Kaizuki](https://t.me/Kaizuka_Network) 」\n"
             ),
             parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="Repo",
-                             url="t.me/AsukaSupport")
+                             text="Owner",
+                             url="t.me/GOD_SID")
                      ] 
                 ]
             ),
