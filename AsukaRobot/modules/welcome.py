@@ -68,9 +68,9 @@ ENUM_FUNC_MAP = {
 VERIFIED_USER_WAITLIST = {}
 
 Asuka_IMG = "https://telegra.ph/file/4f9d3cd448f3d319afca9.mp4"
-Asuka = "https://telegra.ph/file/6cbc8452a2796ad58c2f9.jpg"
-Asuka_VID = "https://telegra.ph/file/d7ffd1eae2984b0cfb148.jpg"
-WAIFUS_IMG = "https://telegra.ph/file/2b36ebe595bc664c0e544.jpg"
+Asuka = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
+Asuka_VID = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
+WAIFUS_IMG = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
 
 
 # do not async
@@ -256,10 +256,10 @@ def new_member(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="Support",
-                             url=f"https://t.me/AsukaSupport"),
+                             url=f"https://t.me/ShotoXSupport"),
                        InlineKeyboardButton(
-                             text="Kaizuryu",
-                             url="https://t.me/TheKaizuryu")
+                             text="Kaizuka",
+                             url="https://t.me/Kaizuka_Network")
                      ],
                      [                  
                        InlineKeyboardButton(
@@ -1034,7 +1034,7 @@ def __chat_settings__(chat_id, user_id):
 HELPABLE = {}
 
 HELP_STRINGS = """
-Hey [{}](tg://user?id={}) your *Asuka* is here! 
+Hey [{}](tg://user?id={}) your *Shoto* is here! 
 I Help Admins To Manage Their Groups! 
 Main commands available :
  ‣ /help: PM's you this message.
