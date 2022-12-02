@@ -61,32 +61,28 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hey {},*
-*I'm Shoto Todoroki My Hero Academia Themed Group Management Bot.*
+*I'm Chizuru Mizuhara Rent-A-Girlfriend  Themed Group Management Bot.*
 
 *Hit The The Help Button To Get List Of My Commands.××*
-
-*•Powered By* [Kaizuka](https://t.me/Kaizuka_Network)
-
-
 """
 
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="➕️ Add Shoto To Your Chat ➕️",
-                             url="https://t.me/AsukaRobot?startgroup=true"),
+                             text="➕️ Add Chizuru To Your Chat ➕️",
+                             url="https://t.me/Chizuru_Probot?startgroup=true"),
                     ],
                    [
                        InlineKeyboardButton(
-                             text="Kaizuka",
-                             url="https://t.me/Kaizuka_Network"),
+                             text="Support",
+                             url="https://t.me/BotsXSupport"),
                        InlineKeyboardButton(
-                             text="About Shoto",
-                             callback_data="asukaL_"),
+                             text="Updates",
+                             url="https://t.me/BotsXSupport"),
                    ],
                   [
                         InlineKeyboardButton(
-                             text="Help & Cmds ❔",
+                             text="Help & Cmds",
                              callback_data="help_back"),
                     ],
     ]
@@ -164,9 +160,9 @@ Asuka_PIC = "https://telegra.ph/file/eedea672a770ec92363bd.jpg"
 
 Asuka_VID = "https://telegra.ph/file/8d49b6f49362e7778785e.jpg"
 
-PM_PHOTO = "https://telegra.ph/file/cf523a33f67e1c29c74cb.mp4"
+PM_PHOTO = "https://telegra.ph/file/f460984a59b6f0ccd1d5b.mp4"
 
-Asuka_DISPACHER_PIC = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
+Asuka_DISPACHER_PIC = "https://telegra.ph/file/b6cd88e7931a748f4369d.jpg"
 
 DONATE_STRING = """ Adding Me To Your Groups Is Donation For Me Though I Would Appreciate If You Join My Creator's Network @TheKaizuryu"""
 
@@ -790,13 +786,13 @@ def main():
     if SUPPORT_CHAT is not None and isinstance(SUPPORT_CHAT, str):
         try:
             name = dispatcher.bot.first_name
-            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*{name} Started!\n*", parse_mode=ParseMode.MARKDOWN,
+            m = dispatcher.bot.send_photo(f"@{SUPPORT_CHAT}", Asuka_DISPACHER_PIC, caption=f"*I'm Back To My Job\n*", parse_mode=ParseMode.MARKDOWN,
             reply_markup=InlineKeyboardMarkup(
                 [
                   [
                        InlineKeyboardButton(
-                             text="Off-Topic",
-                             url="https://t.me/Anime_Chat_XKaizuryu")
+                             text="Add Me To Your Chat",
+                             url="https://t.me/Chizuru_Probot?startgroup=true")
                      ]
                 ]
             ),
