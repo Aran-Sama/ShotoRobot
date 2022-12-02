@@ -58,7 +58,7 @@ async def hmm(yes):
     Asuka += f"• **Pyrogram Version** - `{pyro}`\n"
     Asuka += f"• **My Master** - [Haruki](tg://user?id={OWNER_ID})\n\n"
     Asuka += f"Thanks For Adding Me In {yes.chat.title}"
-    BUTTON = [[Button.url("Support Chat", "https://t.me/BotsXSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
+    BUTTON = [[Button.url("Support Chat", "https://t.me/BotsXSupport"), Button.url("Updates", "https://t.me/Chizuru_Update")]]
     on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/52f424c32af62f2119e73.jpg",caption=Asuka, buttons=BUTTON)
 
 @register(pattern=("/repo"))
