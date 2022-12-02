@@ -20,7 +20,7 @@ from AsukaRobot.modules.helper_funcs.readable_time import get_readable_time
 AFK_GROUP = 7
 AFK_REPLY_GROUP = 8
 
-AFKVID = "https://telegra.ph/file/37593d9ed1ee31fa05da2.mp4"
+AFKVID = "https://telegra.ph/file/6168c904117a5c2ece915.jpg"
 
 
 def afk(update, context):
@@ -37,8 +37,8 @@ def afk(update, context):
     REDIS.set(f'afk_time_{update.effective_user.id}', start_afk_time)
     fname = update.effective_user.first_name
     try:
-        update.effective_message.reply_video(
-            AFKVID,caption="Bye {}!".format(fname))
+        update.effective_message.reply_photo(
+            AFKVID,caption="Bye Bye {}!".format(fname))
     except BadRequest:
         pass
 
