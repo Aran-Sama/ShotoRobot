@@ -68,9 +68,9 @@ ENUM_FUNC_MAP = {
 VERIFIED_USER_WAITLIST = {}
 
 Asuka_IMG = "https://telegra.ph/file/4f9d3cd448f3d319afca9.mp4"
-Asuka = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
-Asuka_VID = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
-WAIFUS_IMG = "https://telegra.ph/file/02dd606c84eca54e2a962.jpg"
+Asuka = "https://telegra.ph/file/52f424c32af62f2119e73.jpg"
+Asuka_VID = "https://telegra.ph/file/52f424c32af62f2119e73.jpg"
+WAIFUS_IMG = "https://telegra.ph/file/52f424c32af62f2119e73.jpg"
 
 
 # do not async
@@ -256,10 +256,10 @@ def new_member(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="Support",
-                             url=f"https://t.me/ShotoXSupport"),
+                             url=f"https://t.me/BotsXSupport"),
                        InlineKeyboardButton(
-                             text="Kaizuka",
-                             url="https://t.me/Kaizuka_Network")
+                             text="Updates",
+                             url="https://t.me/BotsXSupport")
                      ],
                      [                  
                        InlineKeyboardButton(
