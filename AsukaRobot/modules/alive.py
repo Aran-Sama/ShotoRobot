@@ -51,15 +51,15 @@ async def hmm(yes):
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()
     uptime = await _human_time_duration(int(uptime_sec))
-    Asuka = f"• **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm Shoto**\n"
+    Asuka = f"• **Hey [{yes.sender.first_name}](tg://user?id={yes.sender.id}), I'm Chizuru**\n"
     Asuka += f"• **My Uptime** - `{uptime}`\n"
     Asuka += f"• **Telethon Version** - `{version.__version__}`\n"
     Asuka += f"• **PTB Version** - `{telegram.__version__}`\n"
     Asuka += f"• **Pyrogram Version** - `{pyro}`\n"
-    Asuka += f"• **My Master** - [SID](tg://user?id={OWNER_ID})\n\n"
+    Asuka += f"• **My Master** - [Haruki](tg://user?id={OWNER_ID})\n\n"
     Asuka += f"Thanks For Adding Me In {yes.chat.title}"
-    BUTTON = [[Button.url("Support Chat", "https://t.me/ShotoXSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
-    on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/02dd606c84eca54e2a962.jpg",caption=Asuka, buttons=BUTTON)
+    BUTTON = [[Button.url("Support Chat", "https://t.me/BotsXSupport"), Button.url("Updates", "https://t.me/AsukaUpdates")]]
+    on = await borg.send_file(yes.chat_id, file="https://telegra.ph/file/52f424c32af62f2119e73.jpg",caption=Asuka, buttons=BUTTON)
 
 @register(pattern=("/repo"))
 async def repo(event):
