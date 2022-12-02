@@ -78,7 +78,7 @@ buttons = [
                              url="https://t.me/BotsXSupport"),
                        InlineKeyboardButton(
                              text="Updates",
-                             url="https://t.me/BotsXSupport"),
+                             url="https://t.me/Chizuru_Update"),
                    ],
                   [
                         InlineKeyboardButton(
